@@ -1,0 +1,13 @@
+/* long double=%Lf,
+float ,double=%f,
+char=%c,
+int=%d
+*/
+#include<stdio.h>
+int main()
+{
+    char a=10,b=12;
+    int s=a+b;
+    printf("%d",s);
+    return 0;
+}

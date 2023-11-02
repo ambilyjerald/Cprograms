@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,m,d,r;
+    printf("Enter two numbers:");
+    scanf("%d%d",&a,&b);
+    c=a-b;
+    printf("diffrence is=%d\n",c);
+    m=a*b;
+    printf("product is=%d\n",m);
+    d=a/b;
+    printf("Quotient is=%d\n",d);
+    r=a%b;
+    printf("reminder is=%d\n",r);
+    
+    printf("increment=%d\n",r++);
+    printf("Decrement=%d\n",r--);
+    return 0;
+    }

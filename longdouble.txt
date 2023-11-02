@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+   long double a=3456.5;
+    printf("%Lf",a);
+    return 0;
+}
