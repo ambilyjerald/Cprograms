@@ -1,0 +1,17 @@
+#include<stdio.h>
+int sum();
+int main()
+{
+    int c,d;
+    c=sum();
+    d=c+30;
+    printf("%d",d);
+    
+}
+int sum()
+{
+    int a=30,b=50,sum;
+    sum=a+b;
+    return sum;
+    
+}

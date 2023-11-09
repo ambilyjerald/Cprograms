@@ -1,0 +1,20 @@
+#include<stdio.h>
+int sum(int,int);
+int main()
+{
+    int c=10,d=20;
+    printf("c=%d d=%d\n",c,d);
+   sum(c,d);
+   printf("c=%d d=%d\n",c,d);
+    
+    
+}
+int sum(int a, int b)
+{
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+    printf("a=%d b=%d\n",a,b);
+    
+}
