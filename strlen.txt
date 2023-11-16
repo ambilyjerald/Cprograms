@@ -1,0 +1,9 @@
+#include<stdio.h>  
+#include <string.h>    
+int main()
+{    
+    char ch[20]={'A', 'm', 'b', 'i', 'l', 'y', '\0'};    
+    printf("Length of string is: %d\n",strlen(ch)); 
+    printf("%s",ch);
+    return 0;    
+}    
