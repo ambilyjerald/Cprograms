@@ -7,7 +7,7 @@ int main()
 
     printf("The fibonacci series is:\n");
     printf("%d\n%d\n",f1,f2);
-    for(int i=2;i<=limit;i++)
+    for(int i=3;i<=limit;i++)
     {
         f3=f1+f2;
         printf("%d\n",f3);

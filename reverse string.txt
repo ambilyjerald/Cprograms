@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void reverse_string(char s[], char result[]) {
+    int i, j;
+
+    // Find the length of the string
+    for (i = 0; s[i] != '\0'; ++i);
+
+    // Reverse the string
+    for (j = 0; i > 0; --i, ++j) {
+        result[j] = s[i - 1];
+    }
+
+    // Add null terminator to result
+    result[j] = '\0';
+}
+
+int main() {
+    char string[] = "Hello";
+    char result[20];
+
+    reverse_string(string, result);
+
+    printf("Reversed String: %s\n", result);
+
+    return 0;
+}

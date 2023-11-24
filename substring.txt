@@ -1,0 +1,24 @@
+include <stdio.h>
+
+void substring(char s[], int start, int end, char result[]) {
+    int i, j = 0;
+
+    for (i = start; i < end; ++i) {
+        result[j] = s[i];
+        ++j;
+    }
+
+    // Add null terminator to result
+    result[j] = '\0';
+}
+
+int main() {
+    char string[] = "Hello World";
+    char result[20];
+
+    substring(string, 0, 5, result);
+
+    printf("Substring: %s\n", result);
+
+    return 0;
+}

@@ -1,0 +1,31 @@
+#include<stdio.h>
+int insertatend(int arr[],int n,int key,int capacity)
+{
+    if(n>=capacity)
+    {
+        return 0;
+        
+    }
+    arr[n]=key;
+    return(n+1);
+}
+int main()
+{
+    int arr[20]={10,20,30,40,50};
+    int capacity=sizeof(arr)/sizeof(arr[0]);
+    int n=5;
+    int key=60;
+    printf("before insrtion:");
+    for(int i=0;i<n;i++)
+    {
+        printf("%d \n",arr[i]);
+    }
+    n=insertatend(arr,n,key,capacity);
+    printf("After insertion\n");
+    for(int i=0;i<n;i++)
+    {
+        printf("%d \n",arr[i]);
+        
+    }
+    return 0;
+}
